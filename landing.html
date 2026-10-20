@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Idea Catcher — by Zero To Reel</title>
+<meta name="description" content="A tiny AI assistant that captures every idea you speak or type, transcribes it, sorts it, and files it into Notion — automatically, for free.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  /* Zero To Reel feel — swap these for your exact brand hex if you have them */
+  :root{
+    --bg:#F7F4EF; --card:#FFFFFF; --ink:#2A2622; --muted:#6F6659;
+    --lilac:#9B82D4; --lilac-deep:#6E55B0; --line:#E7E0D4; --wash:#EFEAF7;
+    --fd:"Instrument Serif",Georgia,serif; --fb:"Inter",-apple-system,system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fb);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:900px;margin:0 auto;padding:0 20px}
+  a{color:inherit}
+  .btn{display:inline-block;background:var(--lilac-deep);color:#fff;text-decoration:none;font-weight:600;
+    padding:14px 26px;border-radius:999px;transition:transform .15s,background .15s}
+  .btn:hover{background:var(--lilac);transform:translateY(-1px)}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--lilac-deep);font-weight:700}
+
+  header{padding:64px 0 40px;text-align:center}
+  h1{font-family:var(--fd);font-weight:400;font-size:clamp(40px,8vw,72px);line-height:1.02;margin:14px 0 10px;text-wrap:balance}
+  h1 em{font-style:italic;color:var(--lilac-deep)}
+  .sub{font-size:clamp(17px,2.4vw,20px);color:var(--muted);max-width:40ch;margin:0 auto 26px}
+
+  section{padding:40px 0}
+  h2{font-family:var(--fd);font-weight:400;font-size:clamp(28px,4.5vw,40px);margin:0 0 8px;text-wrap:balance}
+  .lead{color:var(--muted);max-width:56ch;margin:0 0 28px}
+
+  .steps{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:720px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .step .n{width:34px;height:34px;border-radius:50%;background:var(--wash);color:var(--lilac-deep);
+    font-weight:700;display:grid;place-items:center;margin-bottom:12px}
+  .step h3{margin:0 0 6px;font-size:18px}
+  .step p{margin:0;color:var(--muted);font-size:15px}
+
+  .say{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-top:8px}
+  .say .row{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line)}
+  .say .row:first-child{border-top:0}
+  .kw{font-weight:700;color:var(--lilac-deep);white-space:nowrap}
+  .say .row span{color:var(--muted)}
+
+  .free{background:var(--wash);border-radius:20px;padding:28px 24px;text-align:center;margin-top:8px}
+  .free h2{margin-bottom:6px}
+  .free p{color:var(--muted);max-width:54ch;margin:0 auto}
+
+  .cta{text-align:center;padding:56px 0 72px}
+  footer{border-top:1px solid var(--line);padding:24px 0;text-align:center;color:var(--muted);font-size:13px}
+  ul.plain{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+  ul.plain li{padding-left:26px;position:relative;color:var(--muted)}
+  ul.plain li::before{content:"✓";position:absolute;left:0;color:var(--lilac-deep);font-weight:700}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="eyebrow">Zero To Reel</div>
+  <h1>Never lose an <em>idea</em> again.</h1>
+  <p class="sub">A tiny assistant that captures every idea you speak or type, writes it out, sorts it, and files it into Notion — automatically, while you sleep.</p>
+  <a class="btn" href="#get">Get it set up →</a>
+</header>
+
+<section class="wrap">
+  <h2>Your best ideas show up at the worst times.</h2>
+  <p class="lead">In the shower. Mid-walk. Right before sleep. By the time you're at your desk, they're gone. Idea Catcher lets you catch them the second they happen — just talk.</p>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Speak or type it</h3><p>Send your idea to your private assistant in Telegram. Hold the mic and talk, or type a line. Two seconds, done.</p></div>
+    <div class="step"><div class="n">2</div><h3>It sorts it for you</h3><p>Voice notes get transcribed. Each idea is filed under the folder you chose — Business, Personal, Admin, whatever you set.</p></div>
+    <div class="step"><div class="n">3</div><h3>Lands in Notion</h3><p>Within the hour it appears, written out and organised, in one tidy list you can act on later.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>You're in control of the folders.</h2>
+  <p class="lead">Start a note with a keyword and it files itself. No keyword? It waits in your Inbox to sort later.</p>
+  <div class="say">
+    <div class="row"><span class="kw">BUSINESS —</span><span>a reel about how I plan my week</span></div>
+    <div class="row"><span class="kw">ADMIN —</span><span>renew the domain next month</span></div>
+    <div class="row"><span class="kw">AGENDA —</span><span>call the accountant on Thursday</span></div>
+    <div class="row"><span class="kw">(no keyword) —</span><span>goes straight to your Inbox</span></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="free">
+    <div class="eyebrow">Runs itself · costs nothing</div>
+    <h2>Free, and it never bills you.</h2>
+    <p>It runs in the cloud, so your computer can be off. Voice is transcribed with free, on-device AI. A built-in guard warns you and stops before you could ever be charged a cent.</p>
+  </div>
+</section>
+
+<section class="wrap" id="get">
+  <h2>Set it up once. Catch ideas forever.</h2>
+  <p class="lead">You give the builder to your AI, answer a couple of simple questions about your folders, and it sets the whole thing up for you — Telegram, Notion, and the automatic hourly sync.</p>
+  <ul class="plain">
+    <li>No code to write — the assistant builds it with you.</li>
+    <li>Your own private copy; nothing shared.</li>
+    <li>Works by voice, in any language.</li>
+  </ul>
+</section>
+
+<div class="cta wrap">
+  <a class="btn" href="https://github.com/katerini007/idea-catcher">Get it free on GitHub →</a>
+</div>
+
+<footer class="wrap">© Zero To Reel · Idea Catcher</footer>
+</body>
+</html>

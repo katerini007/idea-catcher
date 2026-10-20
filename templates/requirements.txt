@@ -1,0 +1,6 @@
+requests>=2.31.0
+python-dotenv>=1.0.0
+# Pinned: a newer `av` breaks faster-whisper on CI with
+# "open() got an unexpected keyword argument 'metadata_errors'"
+faster-whisper==1.2.1
+av==18.0.0
